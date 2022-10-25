@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Mengenal JavaScript</title>
+</head>
+<body>
+ <h1>Pengenalan JavaScript</h1>
+ <h3>Contoh document.write dan console.log</h3>
+ <script>
+ document.write("Hello World");
+ console.log("Hello World");
+ </script>
+</body>
+</html>
+
+<html>
+    <head>
+        <title>alert box</title>
+    </head>
+    <body>
+        <script language = "JavaScript">
+            window.alert("ini merupakan pesan untuk anda")
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>skrip javascript</title>
+    </head>
+    <body>
+        percobaan memakai java script:<br>
+        <script language = "javascript">
+            document.write("selamat mencoba javascript<br>");
+            document.write("semoga sukses");
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>pemasukan data</title>
+    </head>
+<body>
+    <script language = "javascript">
+        var nama = prompt ("siapa nama anda?","masukan nama anda");
+        document.write("hai,"+ nama);
+    </script>
+</body>
+</html>
+
+<html>
+    <head>
+        <title>contoh program javascript</title>
+        <script language="javascript">
+            function pesan() {
+                alert ("memanggil javascript lewat body onload")
+            }
+        </script>
+    </head>
+    <body onload=pesan ()>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>contoh program javascript</title>
+        <script language="javascript">
+            function test (val1,val2)
+            {
+                document.write("<br>"+"perkalian : val1*val2 "+"<br>")
+                document.write(val1*val2)
+                document.write("<br>"+"pembagian : val1/val2 "+"<br>")
+                document.write(val1/val2)
+                document.write("<br>"+"penjumlahan : val1+val2 "+"<br>")
+                document.write(val1+val2)
+                document.write("<br>"+"pengurangan : val1-val2 "+"<br>")
+                document.write(val1-val2)
+                document.write("<br>"+"modulus : val1%val2 "+"<br>")
+                document.write(val1%val2)
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
+    </body>
+</html>
