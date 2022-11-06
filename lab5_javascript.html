@@ -85,3 +85,141 @@
         <input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
     </body>
 </html>
+<html>
+    <head>
+        <title>contoh id-else</title>
+    </head>
+    <body>
+        <script language = "java script">
+        <!--
+            vae nilai = prompt("nilai (0-100: ", 0);
+            var hasil = "";
+            if (nilai>=60)
+            hasil = "lulus";
+            document.write("hasil:" +hasil);
+        //-->
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>contoh pemrograman javascript</title>
+
+        <script language="javascript">
+        function test ()
+        {
+            val1=window.prompt("input nilai (1-5:")
+            switch (val1)
+            {
+                case "1" :
+                    document.write("bilangan satu")
+                    break
+                case "2" :
+                    document.write("bilangn dua")
+                    break
+                case "3" :
+                    document.write("bilangn tiga")
+                    break
+                case "4" :
+                    document.write("bilangn empat")
+                    break
+                case "5" :
+                    document.write("bilangn lima")
+                    break
+                default :
+                    document.write("bilangan lainnya")
+            }
+        }
+        </script>
+</head>
+<body>
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>
+
+<html>
+    <head>
+        <script language="javascript">
+        function test () {
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+                document.kirim.T2.value="bilangan genap"
+            else
+                document.kirim.T2.value="bilangan ganjil"
+        }
+        </script>
+    </head>
+    <body>
+        <form method="POST" name="kirim">
+            <p>BIL <input type="text" name="T1" size="20">
+            MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+            <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>objek document</title>
+    </head>
+    <body>
+        <script language="javascript">
+        <!--
+            function ubahWarnaLB(warna) {
+                document.bgColor = warna;
+            function ubahWarnaLD(warna) {
+                document.bgColor = warna;
+            }
+            //-->
+        </script>
+        <h1>tes</h1>
+        <form>
+            <input type="button" value="Latar Belakang Hijau" onClick="ubahWarnaLB('GREEN')">
+            <input type="button" value="Latar Belakang Hijau" onClick="ubahWarnaLB('WHITE')">
+            <input type="button" value="Teks Kuning" onClick="ubahWarnaLD('YELLOW')">
+            <input type="button" value="Teks Biru" onClick="ubahWarnaLD('BLUE')">
+            </form>
+            <script language="javascript">
+            <!--
+                document.write("Dimodifikasi terahir pada " +
+                document.lastModified);
+            //-->
+            </script>
+
+    </body>
+</html>
+
+<!--
+    File:daftar_menu.html
+//-->
+
+<html>
+<head>
+    <title>Daftare Menu</title>
+    <script>
+        function hitung(ele) {
+            var total = document.getElementById('total').value;
+                total = (total ? parseInt(total) :0);
+            var harga = 0;
+            
+            if (ele.checked) {
+                harga = ele.value;
+                total += parseInt(harga)
+            } else {
+                harga = ele.value;
+                if (total > 0)
+                    total -= parseInt(harga);
+            }
+            document.getElementById('total').value = total ;
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Daftar Menu Makanan</h1>
+        <label><input type="checkbox" value="5000" id="menu1" onClick="hitung(this);"/> Ayam Goreng Rp.5000</label><br/>
+        <label><input type="checkbox" value="500" id="menu2" onClick="hitung(this);"/> Tempe Goreng Rp.500</label><br/>
+        <label><input type="checkbox" value="2500" id="menu3" onClick="hitung(this);"/> Telur Dadar Rp.2500</label><br/>
+        <strong>Total Bayar : Rp. <Input id="total" type="text" /></strong>
+        </body>
+</html>
